@@ -143,14 +143,14 @@ int print_int(va_list types, char buffer[],
 
 /************************* PRINT BINARY *************************/
 /**
- * print_binary - Prints an unsigned number
+ * print_binary - Prints an unsigned number.
  * @types: Lista of arguments
- * @buffer: Buffer array to handle print
+ * @buffer: a Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
- * @precision: Precision specification
+ * @precision: specifies precision.
  * @size: Size specifier
- * Return: Numbers of char printed.
+ * Return: Numbers of printed characters.
  */
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)

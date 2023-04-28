@@ -3,9 +3,9 @@
 /************************* WRITE HANDLE *************************/
 /**
  * handle_write_char - Prints a string
- * @c: char types.
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags.
+ * @c: character types.
+ * @buffer: Buffer array to handle print.
+ * @flags:  Calculates all active flags.
  * @width: get width.
  * @precision: precision specifier
  * @size: Size specifier
@@ -48,9 +48,9 @@ int handle_write_char(char c, char buffer[],
 /**
  * write_number - Prints a string
  * @is_negative: Lista of arguments
- * @ind: char types.
+ * @ind: character types
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags:  Calculates the active flags
  * @width: get width.
  * @precision: precision specifier
  * @size: Size specifier
@@ -79,17 +79,17 @@ int write_number(int is_negative, int ind, char buffer[],
 }
 
 /**
- * write_num - Write a number using a bufffer
+ * write_num - Write a number using a buffer
  * @ind: Index at which the number starts on the buffer
  * @buffer: Buffer
  * @flags: Flags
- * @width: width
- * @prec: Precision specifier
+ * @width: get the width
+ * @prec: specifies precision
  * @length: Number length
- * @padd: Pading char
- * @extra_c: Extra char
+ * @padd: Padding character
+ * @extra_c: Extra character.
  *
- * Return: Number of printed chars.
+ * Return: Number of printed characters.
  */
 int write_num(int ind, char buffer[],
 	int flags, int width, int prec,
